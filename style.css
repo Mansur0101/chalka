@@ -1,0 +1,671 @@
+/* CSS Document */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+    background: #FFFFFF;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word !important;
+    font-family: Poppins, sans-serif;
+
+
+}
+
+h1 {
+    font-size: 43.95px;
+    text-align: center;
+    color: #1D2222;
+}
+
+h2{
+    font-size: 35.16px;
+    text-align: center;
+    color: #1D2222;
+    
+}
+
+h3 {
+    font-size: 22.50px;
+    line-height: 34px;
+    text-align: center;
+    color: #1D2222;
+}
+
+h3 a {
+    color: #1D2222;
+}
+
+a {
+    color: #1D2222;
+}
+
+
+*
+{
+    outline: none;
+}
+
+/* NAVBAR SEARCH BAR. */
+
+form{
+    width:  200px;
+}
+#cover{
+    margin-top: 15px;
+    display: flex;
+    margin-left: 20px;
+    background-color: #FDEEEE;
+  border-radius: 20px;
+    width: 200px;
+}
+input{
+    float: left;
+    width: 70%;
+    font-family: poppins;
+    font-size: 14px;
+    background-color:transparent;
+    border: none;
+    margin-left:10px; 
+    margin-top: 3px;
+     line-height:0px;
+}
+button{
+    float: right;
+    width: 20%;
+    background-color:transparent;
+      border: none;
+   
+   
+}
+#search{
+    font-size:18px;
+    margin-top:5px; 
+    color: #ED6363;
+}
+/* NAVBAR*/
+.navbar {
+    padding-top: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+        height:8p0x;
+     background-color: #fff;
+
+}
+
+#navbar_ins{
+    max-width:80%; 
+     margin: 0 auto;
+}
+#navbar_Mat{
+    margin-left:-10px;
+    margin-right:20px; 
+}
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+p {
+    text-align: center;
+}
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+#logo {
+    display: block;
+    padding: 0px;
+    float: left;
+    font-size: 20px;
+    line-height: 60px;
+    margin-top: 10px;
+    background-color: #fff;
+
+}
+
+#icon{
+    float: right;
+    width: 20%;
+    padding-top:3px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+    background-color: #fff;
+}
+
+/* Styling the links */
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: #1D2222;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+nav ul li ul li:hover {
+    text-decoration: underline;
+}
+
+/* Background color change on Hover */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 60px;
+  
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+    background-color: #FDEFEF;
+   
+}
+
+
+/* Second, Third and more Tiers	
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left: 170px;
+
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after {
+    content: ' ';
+}
+
+li > a:only-child:after {
+    content: '';
+}
+#section_1{
+    display: flex;
+    max-width:80%;
+    margin: 0 auto;
+    max-height:718px; 
+    padding:50px 0; 
+}
+
+#header{
+    float: left;
+    width:50%; 
+      padding: 180px 0;
+}
+
+#illustration{
+    float: right;
+   width:50%;
+    padding: 120px 0;
+      
+}
+
+ #illustration_mobile{
+        display: none;
+        
+    }
+
+#header_img{
+  width: 100%;
+  height: auto;
+    float: right;
+}
+#section_1_h1{
+    text-align: left;
+    line-height: 73px;
+    font-family:Poppins; 
+    font-weight:normal;
+    font-size:48.83px; 
+    margin:0px 0px 0px 0px; 
+    
+     
+}
+
+#overline{
+     display:inline-block;
+    border-top:5px solid #ED6363;
+    padding-top:8px;
+    color:black;
+}
+
+span{
+    color: #ED6363;
+}
+
+#section_1_p{
+    text-align: left;
+    color: #1D2222;
+    opacity: 73%;
+    font-size:16px; 
+}
+}
+
+.box{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform : translate(-50% ,-50%);
+}
+
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:10px 60px;
+  border-radius:10px;
+  display:inline-block;
+  transition: all .5s;
+  box-shadow:0px 8px 24px #ED6363;
+    font-size: 16px;
+    margin-top:20px; 
+
+}
+
+.btn-white{
+  background:#ED6363;
+  color:#FFF;
+}
+
+.btn:hover{
+   box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+   transform : translateY(-3px);
+}
+
+.btn:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2)
+  transform:translateY(-1px);
+}
+
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:20px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn-white::after {
+    background: #ED6363;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+#section_2{
+    background-color:#FDEFEF;
+     display:block; 
+    max-width:100%;
+    max-height:1000px; 
+    height:600px; 
+  
+}
+
+#section_2_h3{
+    font-weight:normal;
+    color: #ED6363;
+    padding-top:40px ;
+    margin-bottom: 10px; 
+}
+
+#section_2_h2{
+    font-weight:600;
+    margin-top: 10px; 
+}
+   
+#section_2_title{
+    width:100%; 
+}
+#block{
+    display: flex;
+    max-width:50%;
+    margin:0 auto; 
+}
+     #block_1{
+        float:left;
+        width:70%;
+        height:220px; 
+        background-color:#fff;
+        color: #1D2222;
+        padding:30px;
+        margin-top:40px; 
+        border: 2px solid #FFF; 
+        border-radius:10px; 
+        box-shadow:0px 3px 6px #707070;
+        text-align: center;
+        }
+   #block_2{
+        float:right;
+        width:43%;
+        margin-left:200px;  
+        height:220px; 
+        background-color:#fff;
+        color: #1D2222;
+        padding:30px;
+        margin-top:40px; 
+        border: 2px solid #FFF; 
+        border-radius:10px; 
+        box-shadow:0px 3px 6px #707070;
+        text-align: center;
+        }
+.block_title{
+    font-size:20px;
+    font-weight:600;
+    margin:5px 0px; 
+}
+.block_p{
+    font-size:14px;
+    margin:0px 0px; 
+    opacity:73%; 
+}
+#block_icon{
+    color: #FF757C;
+}
+    
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width : 768px) {
+    .navbar {
+        max-width: 100%;
+        margin: 0 auto
+    }
+    
+    #navbar_Mat{
+    margin-left:0px;
+    margin-right:0px; 
+}
+
+
+    #logo {
+        display: block;
+        padding: 0;
+        width: 35%;
+        text-align: center;
+        float: left;
+        margin-top: 10px;
+        margin-left:20px; 
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle + a,
+    .menu {
+        display: none;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+        background-color: #FDEFEF;
+        ;
+        padding: 14px 20px;
+        color: #1D2222;
+        font-size: 17px;
+        text-decoration: none;
+        border: none;
+    }
+
+
+
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked + ul {
+        display: block;
+
+    }
+
+    .material-icons {
+        color: #ED6363;
+        float: right;
+    }
+
+    #burger {
+        float: right;
+        margin-top: 2px;
+        background-color: #fff;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+        background-color: #FDEFEF;
+        border-bottom: solid 1px #ED6363;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        text-decoration: underline;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        padding: 14px 20px;
+        color: #1D2222;
+        font-size: 17px;
+
+    }
+
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #FFF;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+
+    }
+    
+    #cover{
+        display: none;
+    }
+    
+#section_1{
+    display:block; 
+    max-width:100%;
+    margin: 0 auto;
+    height:900px; 
+      padding:0 ; 
+    
+}
+
+#header{
+    text-align: center;
+    width:100%; 
+      padding: 0 0;
+    margin:0 auto;
+      
+}
+    #illustration_mobile{
+        display: block;
+         margin: 0 auto;
+   width:100%;
+    padding-top:140px ;
+        right: 100px;
+        
+    }
+#illustration{
+    display: none;
+      
+}
+    #header_img_0{
+  width: 80%;
+  height: auto;
+padding: 0 50px;
+
+    
+}
+    #section_1_h1{
+    text-align: center;
+    line-height: 73px;
+    font-family:Poppins; 
+    font-weight:normal;
+    font-size:39.06px; 
+    margin:0px 0px 0px 0px; 
+    
+     
+}
+    #section_1_p{
+    text-align: center;
+    color: #1D2222;
+    opacity: 73%;
+    font-size:16px; 
+}
+    
+    #overline{
+     display:inline-block;
+    border-top:0px;
+    padding-top:8px;  
+    color:black;
+}
+
+}
+
+@media all and (max-width : 330px) {
+
+    nav ul li {
+        display: block;
+        width: 94%;
+    }
+
+}
